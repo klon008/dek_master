@@ -1,0 +1,40 @@
+{
+  "name": "dek_master",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "klon_008",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@entr/html-beautify-webpack-plugin": "^2.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "core-js": "^3.6.5",
+    "css-loader": "^3.5.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-beautify-webpack-plugin": "^1.0.5",
+    "html-webpack-plugin": "^4.2.0",
+    "lodash-template-webpack-loader": "^1.0.2",
+    "node-sass": "^4.13.1",
+    "raw-loader": "^4.0.0",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "babelify": "8",
+    "bootstrap": "^4.4.1",
+    "browserify": "^16.5.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
+  },
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open"
+  }
+}

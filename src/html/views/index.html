@@ -1,0 +1,11 @@
+<% var data = {
+    title: "Дек Мастер",
+  }; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+  
+  <div class="container">
+    <p>Я уточка и точка.</p>
+    <p><img src="uploads/test.jpg"></p>
+  </div>
+  
+<%= _.template(require('./../includes/footer.html'))(data) %>
