@@ -1,0 +1,23 @@
+@import "font_face_import_mixin";
+
+@mixin sourcesanspro($pathname, $localf, $localff, $weight, $style){
+    @include font-face-plus-local('Source Sans Pro', '../fonts/sourcesanspro/' + $pathname, 
+    $localf, $localff, $weight, $style, woff2 woff ttf);
+}
+$import_styles: (
+    ('sourcesansproextralight', 'Source Sans Pro ExtraLight', 'SourceSansPro-ExtraLight', 200, normal),
+    ('sourcesansproextralightitalic', 'Source Sans Pro ExtraLight Italic', 'SourceSansPro-ExtraLightIt', 200, italic),
+    ('sourcesansprolight', 'Source Sans Pro Light', 'SourceSansPro-Light', 300, normal),
+    ('sourcesansprolightitalic', 'Source Sans Pro Light Italic','SourceSansPro-LightIt', 300, italic),
+    ('sourcesanspro', 'Source Sans Pro','SourceSansPro-Regular', 400, normal),
+    ('sourcesansproitalic', 'Source Sans Pro Italic','SourceSansPro-It', 400, italic),
+    ('sourcesansprosemibold', 'Source Sans Pro Semibold','SourceSansPro-Semibold', 600, normal),
+    ('sourcesansprosemibolditalic', 'Source Sans Pro Semibold Italic','SourceSansPro-SemiboldIt', 600, italic),
+    ('sourcesansprobold', 'Source Sans Pro Bold','SourceSansPro-Bold', 700, normal),
+    ('sourcesansprobolditalic', 'Source Sans Pro Bold Italic','SourceSansPro-BoldIt', 700, italic),
+    ('sourcesansproblack', 'Source Sans Pro Black','SourceSansPro-Black', 900, normal),
+    ('sourcesansproblackitalic', 'Source Sans Pro Black Italic','SourceSansPro-BlackIt', 900, italic),
+);
+@each $paramm in $import_styles {
+    @include sourcesanspro($paramm...);
+}

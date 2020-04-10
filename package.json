@@ -32,8 +32,8 @@
     "popper.js": "^1.16.1"
   },
   "scripts": {
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
+    "dev": "webpack --mode development --colors --progress",
+    "build": "webpack --mode production --colors --progress",
     "watch": "webpack --mode development --watch",
     "start": "webpack-dev-server --mode development --open"
   }

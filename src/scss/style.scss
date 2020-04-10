@@ -1,22 +1,339 @@
-$font-stack: -apple-system, BlinkMacSystemFont,Roboto,'Open Sans','Helvetica Neue',sans-serif;
+$font-stack: -apple-system,
+BlinkMacSystemFont,
+Roboto,
+'Open Sans',
+'Helvetica Neue',
+sans-serif;
 
 @import "~bootstrap/scss/bootstrap";
 
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/Roboto-Regular.ttf);
-}
+@import "import_font_sourcesanspro";
+@import "custom_mixins";
+
+//@font-face {
+//  font-family: 'Roboto';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: url(../fonts/Roboto-Regular.ttf);
+//}
 
 body {
-  font-family: $font-stack;
-  #logo {
-    width: 10rem;
-  }
-  .container {
-    img {
-      width: 20rem;
+    font-family: $font-stack;
+}
+
+.container-mainmenu {
+    border-bottom: 1px solid #c2af9a;
+}
+
+.navbar.mainmenu {
+    padding: 0.4rem 1rem;
+}
+
+.top-navigation {
+    &>.nav-item {
+        margin: 0.8em 1.2em;
+        color: #cccccc;
+
+        &>a {
+            font-family: "Source Sans Pro";
+            font-size: 16px;
+            font-weight: 300;
+            color: inherit;
+        }
+
+        &.active {
+            color: #c2af9a;
+        }
     }
-  }
+}
+
+.logo {
+    max-width: 177px;
+    max-height: 49px;
+    margin-right: 26px;
+}
+
+.logo-image {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-text {
+    width: 202px;
+    height: 47px;
+    color: #000000;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1rem;
+}
+
+.logo-info-panel {
+    color: #c2ae97;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+    line-height: 2rem;
+}
+
+.logo-phone {
+    color: #c2ae97;
+    font-family: "Source Sans Pro";
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo-information {
+    line-height: 1rem;
+}
+
+.logo-button {
+    margin-bottom: -0.9rem;
+
+    &>.btn {
+        min-width: 231px;
+        min-height: 29px;
+    }
+}
+
+.btn {
+    border: none;
+    border-radius: 3px;
+    background-color: #5aa4d3;
+    background-image: linear-gradient(to bottom, #ffd76c 0%, #ffcb29 50%, #ffbc00 100%);
+    color: #FFFFFF;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 50px;
+    box-sizing: border-box;
+    position: relative;
+    transition: all ((0.06*1.3) + s) ease-out;
+
+    &:hover {
+        color: #FFFFFF;
+    }
+
+    &:focus,
+    &:active {
+        outline: none;
+        box-shadow: none;
+    }
+
+    &:before {
+        display: inline-block;
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        top: 4px;
+        border-radius: 7px;
+        height: 29px;
+        background-color: #ff9d00;
+        transition: all ((0.06*1.3) + s) ease-out;
+        box-shadow: 0px 5px 12px 1px #ff33001a;
+    }
+
+    &:active {
+        top: 4px;
+
+        // box-shadow: 0px 5px 12px 1px #ff33001a;
+        &:before {
+            top: 0;
+            box-shadow: 0 5px 12px 1px #ff33001a;
+        }
+    }
+}
+
+#offer-1 {
+    background-image: url('/img/terrace_wood.png');
+    background-position: left;
+    height: 552px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.offer-1-text-wrap {
+    margin-top: 77px;
+    margin-bottom: 35px;
+    border: 10px solid #f0f0f0;
+    min-width: 727px;
+    min-height: 270px;
+    padding: 38px 0 0 73px;
+    background-color: #ffffff;
+
+    & .offer-1-h {
+        color: #000000;
+        font-family: "Source Sans Pro";
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    & .offer-1-descr {
+        color: #9e9e9e;
+        font-family: "Source Sans Pro";
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1;
+    }
+}
+
+.offer-1-form {
+    padding: 0 37px 0 37px;
+
+    & .btn {
+        height: 41px;
+        width: 417px;
+
+        &:before {
+            height: 41px;
+            box-shadow: 0px 10px 21px 1px #ff330059;
+        }
+
+        &:active {
+            top: 4px;
+
+            &:before {
+                top: 0;
+                box-shadow: 0 10px 21px 1px #ff330059;
+            }
+        }
+    }
+}
+
+.btn-l {
+    padding: 0 26px;
+    color: #ffffff;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 700;
+    &:before {
+        display: inline-block;
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        top: 4px;
+        border-radius: 7px;
+        height: 41px;
+        background-color: #ff9d00;
+        transition: all ((0.06*1.3) + s) ease-out;
+        box-shadow: 0px 10px 21px 1px #ff330059;
+    }
+
+    &:active {
+        top: 4px;
+
+        &:before {
+            top: 0;
+            box-shadow: 0 10px 21px 1px #ff330059;
+        }
+    }
+}
+.offer-1-garanty{
+    align-self: flex-end;
+    padding-bottom: 9%;
+}
+.offer-1-form-input {
+    height: 48px;
+    color: #8a8a8a;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 7px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: inset 1px 3px 2px rgba(230, 230, 230, 0.64), inset 0 0 3px rgba(223, 223, 223, 0.82);
+    background-color: #ffffff;
+}
+
+.offer-1-form-input::-webkit-input-placeholder {
+    color: #c8c8c8;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* WebKit, Blink, Edge */
+.offer-1-form-input:-moz-placeholder {
+    color: #c8c8c8;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Mozilla Firefox 4 to 18 */
+.offer-1-form-input::-moz-placeholder {
+    color: #c8c8c8;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Mozilla Firefox 19+ */
+.offer-1-form-input:-ms-input-placeholder {
+    color: #c8c8c8;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Internet Explorer 10-11 */
+.offer-1-form-input::-ms-input-placeholder {
+    color: #c8c8c8;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.offer-1-form-input-text{
+    margin-top: 19px;
+    width: 100%;
+    text-align: center;
+    color: #c2ae97;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 75px;
+    line-height: 1;
+}
+
+.section-2-blur-bg{
+    background-image: url('/img/section-2-blur-bg.png');
+    background-size: cover;
+    width: 100%;
+    min-height: 791px;
+}
+
+.section-2-wood{
+    background-image: url('/img/wood_terrace.png');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.section-2-header{
+    color: #ffffff;
+    font-family: "Source Sans Pro";
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 84px 0 84px 0;
+}
+.of-h{
+    color: #ffffff;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+.of-d{
+    color: #c2ae97;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    font-weight: 300;
 }
