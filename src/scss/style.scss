@@ -380,3 +380,60 @@ body {
         text-align: center;
     }
 }
+#section-3{
+    min-height: 307px;
+}
+.section-3-bg{
+    background: url(../img/not_buty.png) no-repeat, url(../img/2560x1440-No-Lighting.png) no-repeat;
+    background-size: 50.001% 100%;
+    background-position: left top, right top;
+}
+.section-3-wrap{
+    padding-top: 63px;
+    padding-bottom: 74px;
+}
+.section-3-diff{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.section-3-header{
+    color: #ffffff;
+    font-family: "Source Sans Pro";
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.section-3-diff-1{
+    padding: 48px 62px 41px 77px;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 900;
+    overflow:hidden;
+    display:inline-block; 
+    color:transparent;
+    & span{
+        background: url(../img/not_buty.png) -26% -20px repeat;
+        background-size: 70vw;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        display: block;
+    }
+}
+.section-3-diff-2{
+    border-left: 1px solid #000000;
+    padding: 48px 32px 41px 32px;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 900;
+    overflow:hidden;
+    display:inline-block; 
+    color:transparent;
+    & span{
+        background: url(../img/2560x1440-No-Lighting.png) 6% -20px repeat;
+        background-size: 50vw;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        display: block;
+    }
+}
