@@ -21,6 +21,12 @@ body {
     font-family: $font-stack;
 }
 
+.main {
+    max-width: 1900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .container-mainmenu {
     border-bottom: 1px solid #c2af9a;
 }
@@ -98,6 +104,7 @@ body {
 }
 
 .btn {
+    min-height: 29px;
     border: none;
     border-radius: 3px;
     background-color: #5aa4d3;
@@ -197,7 +204,7 @@ body {
 
             &:before {
                 top: 0;
-                box-shadow: 0 10px 21px 1px #ff330059;
+                box-shadow: 0 8px 10px 1px #ff330059;
             }
         }
     }
@@ -209,6 +216,7 @@ body {
     font-family: "Source Sans Pro";
     font-size: 16px;
     font-weight: 700;
+    height: 41px;
 
     &:before {
         display: inline-block;
@@ -230,7 +238,7 @@ body {
 
         &:before {
             top: 0;
-            box-shadow: 0 10px 21px 1px #ff330059;
+            box-shadow: 0 8px 10px 1px #ff330059;
         }
     }
 }
@@ -344,6 +352,7 @@ body {
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 39px;
+    line-height: 1.5em;
 }
 
 @include media-breakpoint-up(md) {
@@ -351,52 +360,63 @@ body {
         flex: 0 0 30% !important;
         max-width: 30% !important;
     }
+
     .section-2-col-70 {
         flex: 0 0 70% !important;
         max-width: 70% !important;
     }
+
     .section-2-garanty {
         position: absolute;
         bottom: 18%;
         right: 42%;
     }
 }
+
 @include media-breakpoint-down(sm) {
-    .section-2-header{
+    .section-2-header {
         text-align: center;
     }
+
     .of-h {
         text-align: center;
     }
+
     .of-d {
         text-align: center;
     }
-    .section-2-col-30 {
-    }
-    .section-2-col-70 {
-    }
+
+    .section-2-col-30 {}
+
+    .section-2-col-70 {}
+
     .section-2-garanty {
         position: relative;
         text-align: center;
     }
 }
-#section-3{
+
+#section-3 {
     min-height: 307px;
 }
-.section-3-bg{
+
+.section-3-bg {
     background: url(../img/not_buty.png) no-repeat, url(../img/2560x1440-No-Lighting.png) no-repeat;
     background-size: 50.001% 100%;
     background-position: left top, right top;
 }
-.section-3-wrap{
+
+.section-3-wrap {
     padding-top: 63px;
     padding-bottom: 74px;
 }
-.section-3-diff{
+
+.section-3-diff {
     background-color: #FFFFFF;
     border-radius: 10px;
 }
-.section-3-header{
+
+.section-3-header {
     color: #ffffff;
     font-family: "Source Sans Pro";
     font-size: 24px;
@@ -404,15 +424,17 @@ body {
     text-transform: uppercase;
     margin-bottom: 30px;
 }
-.section-3-diff-1{
+
+.section-3-diff-1 {
     padding: 48px 62px 41px 77px;
     text-transform: uppercase;
     font-size: 2.5em;
     font-weight: 900;
-    overflow:hidden;
-    display:inline-block; 
-    color:transparent;
-    & span{
+    overflow: hidden;
+    display: inline-block;
+    color: transparent;
+
+    & span {
         background: url(../img/not_buty.png) -26% -20px repeat;
         background-size: 70vw;
         -webkit-text-fill-color: transparent;
@@ -420,20 +442,153 @@ body {
         display: block;
     }
 }
-.section-3-diff-2{
+
+.section-3-diff-2 {
     border-left: 1px solid #000000;
     padding: 48px 32px 41px 32px;
     text-transform: uppercase;
     font-size: 2.5em;
     font-weight: 900;
-    overflow:hidden;
-    display:inline-block; 
-    color:transparent;
-    & span{
+    overflow: hidden;
+    display: inline-block;
+    color: transparent;
+
+    & span {
         background: url(../img/2560x1440-No-Lighting.png) 6% -20px repeat;
         background-size: 50vw;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         display: block;
+    }
+}
+
+.section-4-wrapper {
+    padding-top: 156px;
+    padding-bottom: 145px;
+}
+
+.seection-4-header {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 64px;
+
+    & h1 {
+        color: #000000;
+        font-family: "Source Sans Pro";
+        font-size: 35px;
+        font-weight: 700;
+    }
+}
+
+.section-4-form {
+    padding: 0 33px;
+
+    & .btn-l {
+        width: 372px;
+    }
+
+    & form>* {
+        margin-right: 16px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.offer-4-form-input {
+    @extend .offer-1-form-input;
+}
+
+.section-5-slide {
+    height: 556px;
+    width: 100%;
+    background: url("../img/section-5-slide-1.png") no-repeat;
+    background-size: cover;
+}
+
+.section-5-head {
+    color: #ffffff;
+    font-family: "Source Sans Pro";
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 1;
+}
+.section-5-head-small {
+    font-size: 60px;
+    font-family: "Roboto";
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1;
+}
+.section-5-tx-1{
+    color: #ffffff;
+    font-family: "Source Sans Pro";
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 1;
+}
+.section-5-tx-2 {
+    @extend .section-5-tx-1;
+    font-size: 24px;
+    line-height: 1;
+}
+.section-5-slides-wrap{
+    height: 177px;
+}
+.section-5-slider-image-wrap{
+    & img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#footer{
+    height: 264px;
+    // background-color: #ffffff;
+}
+
+
+.yellow_link{
+    color: #ffc515;
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.footer-wrapper{
+    padding-top: 36px;
+    padding-bottom: 95px;
+
+    color: #c2ae97;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    font-weight: 300;
+}
+.footer-side-col{
+    padding-top: 29px;
+    text-align: left;
+}
+.footer-side-col-m{
+    text-align: center;
+    & .footer-phone{
+        color: #c2ae97;
+        font-family: "Source Sans Pro";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+}
+.footer-side-col-r{
+    padding-top: 29px;
+    text-align: right;
+    &>div{
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
 }
