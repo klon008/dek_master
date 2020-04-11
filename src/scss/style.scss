@@ -209,6 +209,7 @@ body {
     font-family: "Source Sans Pro";
     font-size: 16px;
     font-weight: 700;
+
     &:before {
         display: inline-block;
         content: '';
@@ -233,10 +234,12 @@ body {
         }
     }
 }
-.offer-1-garanty{
+
+.offer-1-garanty {
     align-self: flex-end;
     padding-bottom: 9%;
 }
+
 .offer-1-form-input {
     height: 48px;
     color: #8a8a8a;
@@ -289,7 +292,7 @@ body {
     font-weight: 300;
 }
 
-.offer-1-form-input-text{
+.offer-1-form-input-text {
     margin-top: 19px;
     width: 100%;
     text-align: center;
@@ -301,39 +304,79 @@ body {
     line-height: 1;
 }
 
-.section-2-blur-bg{
+.section-2-blur-bg {
     background-image: url('../img/section-2-blur-bg.png');
     background-size: cover;
     width: 100%;
     min-height: 791px;
 }
 
-.section-2-wood{
+.section-2-wood {
     background-image: url('../img/wood_terrace.png');
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     background-position: left bottom;
 }
-.section-2-header{
+
+.section-2-header {
     color: #ffffff;
     font-family: "Source Sans Pro";
     font-size: 35px;
     font-weight: 700;
     line-height: 1;
-    padding: 84px 0 84px 0;
+    padding: 84px 0 59px 0;
 }
-.of-h{
+
+.of-h {
     color: #ffffff;
     font-family: "Source Sans Pro";
     font-size: 16px;
     font-weight: 300;
     text-transform: uppercase;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
+    line-height: 1.3;
 }
-.of-d{
+
+.of-d {
     color: #c2ae97;
     font-family: "Source Sans Pro";
     font-size: 14px;
     font-weight: 300;
+    margin-bottom: 39px;
+}
+
+@include media-breakpoint-up(md) {
+    .section-2-col-30 {
+        flex: 0 0 30% !important;
+        max-width: 30% !important;
+    }
+    .section-2-col-70 {
+        flex: 0 0 70% !important;
+        max-width: 70% !important;
+    }
+    .section-2-garanty {
+        position: absolute;
+        bottom: 18%;
+        right: 42%;
+    }
+}
+@include media-breakpoint-down(sm) {
+    .section-2-header{
+        text-align: center;
+    }
+    .of-h {
+        text-align: center;
+    }
+    .of-d {
+        text-align: center;
+    }
+    .section-2-col-30 {
+    }
+    .section-2-col-70 {
+    }
+    .section-2-garanty {
+        position: relative;
+        text-align: center;
+    }
 }
