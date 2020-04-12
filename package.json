@@ -6,6 +6,7 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
     "@entr/html-beautify-webpack-plugin": "^2.0.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
@@ -29,7 +30,8 @@
     "bootstrap": "^4.4.1",
     "browserify": "^16.5.1",
     "jquery": "^3.4.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "dev": "webpack --mode development --colors --progress",

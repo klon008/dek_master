@@ -17,6 +17,9 @@ function generateHtmlPlugins(templateDir) {
             filename: `${name}.html`,
             template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
             inject: false,
+            minify: {
+                collapseWhitespace: false
+            }
         });
     });
 }
@@ -37,8 +40,8 @@ module.exports = {
                 use: {
                     loader: "babel-loader",
                     options: {
-                        presets: ["env"],
-                    },
+                        presets: ["@babel/preset-env"]
+                    }
                 },
             },
             {
@@ -94,6 +97,12 @@ module.exports = {
                 from: "./src/uploads",
                 to: "./uploads",
             },
+            {
+                from: '/node_modules/slick-carousel/slick/ajax-loader.gif',
+                to: './dist/css/ajax-loader.gif',
+                toType: 'file'
+            }
+            
         ]),
     ].concat(htmlPlugins)
 };

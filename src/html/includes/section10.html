@@ -1,18 +1,123 @@
 <section id="section-10">
     <div class="container">
-        <div class="section-10-header text-center">
-            <h1>Узнайте стоимость за 5 минут</h1>
-            <span>Ответьте на 7 вопросов и получите:</span>
+        <div class="quiz_wrapper">
+            <div class="quiz_mask">
+                <div id="quiz-1" class="quiz_item">
+                    <div class="section-10-header text-center">
+                        <h1>Узнайте стоимость за 5 минут</h1>
+                        <span>Ответьте на 7 вопросов и получите:</span>
+                    </div>
+                    <div class="section-10-price-text text-center">
+                        1. Расчет стоимости в 3х вариантах<br />
+                        2. Чек-лист (17 советов по выбору доски)<br />
+                        3. Подарок за экономию нашего времени<br />
+                    </div>
+                    <div class="section-10-btn btn-wrap text-center">
+                        <button class="btn btn-l" onclick="quizGo(2)">
+                            Пройти тест
+                        </button>
+                    </div>
+                </div>
+                <div id="quiz-2" class="quiz_item">
+                    <div class="section-10-header text-center">
+                        <h1>1.В какое место планируете класть доску?</h1>
+                        <span>Отвечая на вопросы теста вы экономите наше рабочее время,<br />
+                            поэтому за каждый ответ вы получаете скидку!</span>
+                    </div>
+                    <div class="section-10-price-text text-center">
+                        <div class="styled_radiobox d-inline-block">
+                            <label>
+                                <input type="radio" name="light" checked>
+                                <span class="design"></span>
+                                <span class="text">Общественное место</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="light">
+                                <span class="design"></span>
+                                <span class="text">Малопроходимое место (частное применение)</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="section-10-btn btn-wrap text-center">
+                        <button class="btn btn-l" onclick="quizGo(3)">
+                            Далее
+                        </button>
+                    </div>
+                </div>
+                <div id="quiz-3" class="quiz_item">
+                    <div class="section-10-header text-center">
+                        <h1>2.В какой бюджет вы планируете уложиться?</h1>
+                        <span>Вы ответили на 1 вопрос - ваша скидка: <b>1500 рублей</b></span>
+                    </div>
+                    <div class="section-10-price-text text-center">
+                        <div class="styled_radiobox d-inline-block">
+                            <label>
+                                <input type="radio" name="light" checked>
+                                <span class="design"></span>
+                                <span class="text">10 - 30 тыс.руб.</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="light">
+                                <span class="design"></span>
+                                <span class="text">30 - 50 тыс.руб.</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="light">
+                                <span class="design"></span>
+                                <span class="text">50 - 100 тыс.руб.</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="light">
+                                <span class="design"></span>
+                                <span class="text">100 - 150 тыс.руб.</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="light">
+                                <span class="design"></span>
+                                <span class="text">150 - 300 тыс.руб.</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="section-10-btn btn-wrap text-center">
+                        <button class="btn btn-l" onclick="quizGo(4)">
+                            Далее
+                        </button>
+                    </div>
+                </div>
+                <div id="quiz-4" class="quiz_item">
+                    <div class="section-10-header text-center">
+                        <h1>Благодарим за ответы!</h1>
+                        <span>Вы ответили на 7 вопросов и набрали скидку в размере <b>10500 РУБЛЕЙ</b><br />
+                            Оставьте свой телефон, и мы закрепим скидку за вашим номером!</span>
+                    </div>
+                    <div class="section-10-price-text text-center">
+                        Оставьте свой Email и получите:<br />
+
+                        1. Расчет стоимости в 3х вариантах<br />
+                        2. Чек-лист (17 советов по выбору доски)<br />
+                        3. Каталоги всех видов досок и комплектующих
+                    </div>
+                    <form action=""></form>
+                    <div class="d-flex justify-content-center quiz_item-form">
+
+                        <input type="tel" class="styled-input" placeholder="Введите ваш телефон">
+                        <input type="email" class="styled-input" placeholder="Введите ваш Email">
+                        <div class="section-10-btn btn-wrap text-center">
+                            <button class="btn btn-l">
+                                Получить материалы и закрепить скидку
+                            </button>
+                        </div>
+                    </div>
+                    </form>
+
+                </div>
+            </div>
         </div>
-        <div class="section-10-price-text text-center">
-            1. Расчет стоимости в 3х вариантах<br/>
-            2. Чек-лист (17 советов по выбору доски)<br/>
-            3. Подарок за экономию нашего времени<br/>
-        </div>
-        <div class="section-10-btn btn-wrap text-center">
-            <button class="btn btn-l">
-                Пройти тест
-            </button>
-        </div>
+
     </div>
 </section>
