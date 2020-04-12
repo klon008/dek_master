@@ -1063,3 +1063,18 @@ body>header {
     width: 101% !important;
     height: 177px;
 }
+.inline-form-inputs>input{
+    margin-right: 16px;
+}
+.footer_show_more_text{
+    color: #ffffff;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    display: block;
+    block-size: fit-content;
+}
