@@ -98,7 +98,7 @@ module.exports = {
                 to: "./uploads",
             },
             {
-                from: '/node_modules/slick-carousel/slick/ajax-loader.gif',
+                from: './node_modules/slick-carousel/slick/ajax-loader.gif',
                 to: './dist/css/ajax-loader.gif',
                 toType: 'file'
             }
