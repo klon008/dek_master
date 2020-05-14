@@ -1087,6 +1087,10 @@ body>header {
 //     -o-transform: translate3d(0, 0, 0) !important;
 //     transform: translate3d(0, 0, 0) !important;
 // }
+.slider-nav .slick-list{
+    width: 100vw !important;
+}
 .slider-nav .slick-track{
     width: 100vw !important;
+    transform: translate3d(0, 0, 0) !important;
 }
