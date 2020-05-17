@@ -21,6 +21,7 @@ $(document).ready(function () {
 		});
 		$('.slider-nav').slick({
 			slidesToShow: 4,
+			variableWidth: true,
 			slidesToScroll: 1,
 			dots: false,
 			centerMode: false,

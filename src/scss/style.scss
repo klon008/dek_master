@@ -1089,6 +1089,9 @@ body>header {
 // }
 .slider-nav .slick-list{
     width: 100vw !important;
+    .slick-slide{
+        width: 25%;
+    }
 }
 .slider-nav .slick-track{
     width: 100vw !important;
