@@ -48,7 +48,6 @@ span {
 
 .main {
     max-width: 1900px;
-    min-width: 1336px;
     width: 100%;
     margin: 0 auto;
 }
@@ -1097,3 +1096,4 @@ body>header {
     width: 100vw !important;
     transform: translate3d(0, 0, 0) !important;
 }
+@import "mobile_style.css";

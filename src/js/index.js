@@ -63,6 +63,17 @@ $(document).ready(function () {
 		let html = _.template(template);
 		$("#wood_board-descition").html(html);
 	})
+
+	//
+    $('.header__burger').click(function (event) {
+            $('.header__burger, .menu-container__burger').toggleClass('active_b');
+    })
+
+
+    $('.nav-item a').click(function () {
+        $('.header__burger, .menu-container__burger').toggleClass('active_b');
+    })
+	//
 });
 
 var quizGo = (pageNumber) => {
