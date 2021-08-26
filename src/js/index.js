@@ -19,18 +19,15 @@ if (ios) {
   };
 } else {
   if (userAgent.includes('wv')) {
-	alert('WEBVIEW');
-	cordova.InAppBrowser.open('https://klon008.github.io/dek_master/', '_system');
-	
+	window.open('google.com', '_system');
   } else {
-	alert('not webview');
-    // Chrome
+
   }
 };
 }
-
+checkmobile();
 $(document).ready(function () {
-	checkmobile();
+
 	const init = () => {
 		let target = $("#wood_board  .modal-articles .custom-article.active");
 		let template = target.find('template').eq(0).html();
