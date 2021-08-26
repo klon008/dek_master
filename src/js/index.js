@@ -19,8 +19,11 @@ if (ios) {
   };
 } else {
   if (userAgent.includes('wv')) {
+	alert('WEBVIEW');
     window.open('https://klon008.github.io/dek_master/', '_system');
+	
   } else {
+	alert('not webview');
     // Chrome
   }
 };
