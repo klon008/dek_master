@@ -2,9 +2,32 @@ import $ from 'jquery';
 import _ from 'lodash';
 import popper from 'popper.js';
 import bootstrap from 'bootstrap';
-import 'slick-carousel'
+import 'slick-carousel';
+// var MobileDetect = require('mobile-detect'),
+// md = new MobileDetect(window.navigator.userAgent);
+function checkmobile(){
+var standalone = window.navigator.standalone,
+  userAgent = window.navigator.userAgent.toLowerCase(),
+  safari = /safari/.test(userAgent),
+  ios = /iphone|ipod|ipad/.test(userAgent);
+
+if (ios) {
+  if (!standalone && safari) {
+    // Safari
+  } else if (!standalone && !safari) {
+    // iOS webview
+  };
+} else {
+  if (userAgent.includes('wv')) {
+    window.open('https://klon008.github.io/dek_master/', '_system');
+  } else {
+    // Chrome
+  }
+};
+}
 
 $(document).ready(function () {
+	checkmobile();
 	const init = () => {
 		let target = $("#wood_board  .modal-articles .custom-article.active");
 		let template = target.find('template').eq(0).html();
