@@ -5,25 +5,30 @@ import bootstrap from 'bootstrap';
 import 'slick-carousel';
 // var MobileDetect = require('mobile-detect'),
 // md = new MobileDetect(window.navigator.userAgent);
-function checkmobile(){
-var standalone = window.navigator.standalone,
-  userAgent = window.navigator.userAgent.toLowerCase(),
-  safari = /safari/.test(userAgent),
-  ios = /iphone|ipod|ipad/.test(userAgent);
+function checkmobile() {
+	if (navigator.userAgent.includes("Instagram")) {
+		window.location.href = "https://mywebsite.com/DummyBytes";
+		return;
+	} else {
+		var standalone = window.navigator.standalone,
+			userAgent = window.navigator.userAgent.toLowerCase(),
+			safari = /safari/.test(userAgent),
+			ios = /iphone|ipod|ipad/.test(userAgent);
 
-if (ios) {
-  if (!standalone && safari) {
-    // Safari
-  } else if (!standalone && !safari) {
-    // iOS webview
-  };
-} else {
-  if (userAgent.includes('wv')) {
-	window.open('google.com', '_system');
-  } else {
+		if (ios) {
+			if (!standalone && safari) {
+				// Safari
+			} else if (!standalone && !safari) {
+				// iOS webview
+			};
+		} else {
+			if (userAgent.includes('wv')) {
+				window.open('google.com', '_system');
+			} else {
 
-  }
-};
+			}
+		};
+	}
 }
 checkmobile();
 $(document).ready(function () {
@@ -51,7 +56,7 @@ $(document).ready(function () {
 			focusOnSelect: true,
 			asNavFor: '.slider',
 			infinite: true,
-			
+
 		});
 	};
 	init();
@@ -88,14 +93,14 @@ $(document).ready(function () {
 	})
 
 	//
-    $('.header__burger').click(function (event) {
-            $('.header__burger, .menu-container__burger').toggleClass('active_b');
-    })
+	$('.header__burger').click(function (event) {
+		$('.header__burger, .menu-container__burger').toggleClass('active_b');
+	})
 
 
-    $('.nav-item a').click(function () {
-        $('.header__burger, .menu-container__burger').toggleClass('active_b');
-    })
+	$('.nav-item a').click(function () {
+		$('.header__burger, .menu-container__burger').toggleClass('active_b');
+	})
 	//
 });
 
